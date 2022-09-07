@@ -1,0 +1,30 @@
+class Test
+{
+public static void main(string []args)
+{
+     boolean b=true;
+     byte b='5;'
+     char c='f';
+     short s='285';
+     int i='10';
+     long l='3845';
+     float f='0.1243';
+     double d='45627253';
+     
+
+     System.out.println("bool=:"+b);
+     System.out.println("byte=:"+b);
+     System.out.println("char=:"+c);
+     System.out.println("short=:"+s);
+     System.out.println("int=:"+i);
+     System.out.println("long=:"+l);
+     System.out.println("float=:"+f);
+     System.out.println("double=:"+d);
+
+
+
+
+   }
+
+ 
+ }
