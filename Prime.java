@@ -1,16 +1,16 @@
 
 public class Prime {
-	    static int c;
+	    static int a;
 		static void primeNumber(int n) {
 			for(int i=1;i<=n;i++) {
-				c=0;
+				a=0;
 				for(int j=2;j<i;j++) {
 					if(i%j==0) {
-						c++;
+						a++;
 						break;
 					}
 				}
-				if(c==0) {
+				if(a==0) {
 					System.out.println(i);
 				}
 				
