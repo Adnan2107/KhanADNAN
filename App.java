@@ -1,28 +1,22 @@
-package hiberstudent.student;
+package com.spring;
 
-import java.util.List;
 
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import hiberstudent.studententities.student;
-import hiberstudent.studentservice.HibernateUtil;
+import com.spring.StudentDao.StudentDao;
 
 public class App {
 
-Session session=HibernateUtil.getSession();
-student s1= new student();
-s1.setSname("Adnan");
+	public static void main(String[] args) {
+		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-student s2= new student();
-s2.setSname("Aman");
+		StudentDao stdao = (StudentDao) ac.getBean("stbean1");
 
 
-student s3= new student();
-s3.setSname("Moin");
+		System.out.println("Student Id :" +st.getSid());
+		System.out.println("Student S_Name :" +st.getSname());
+		System.out.println("Student S_Contact :" +st.getBook());
+	}
 
-Transaction tx=session.beginTransaction();
-session.save();
-tx.commit();
-session.close();
 }

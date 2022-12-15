@@ -1,5 +1,7 @@
-package com.spring.entities;
+package com.springorg.LibraryMangagementSystem.entity;
+
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-public class Student {
+public class Book {
+	@Id
+	private int bid;
+	private String bTitle;
+	private int price;
 
-	private int sid;
-	private String sname;
-	
 }
